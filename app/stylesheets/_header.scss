@@ -1,0 +1,21 @@
+/*================= *header =================*/
+header {
+	padding: 20px 0;
+	background-color: #e4e4e4;
+	p {
+		font-size: 1.5rem;
+	}
+	.burger-nav {
+		display: none;
+		width: 32px;
+		height: 32px;
+		margin-bottom: 20px;
+		margin-left: 10px;
+		background-image: url('../images/nav.png');
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+}
+
+/*================= END *header =================*/

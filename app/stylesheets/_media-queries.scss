@@ -1,0 +1,111 @@
+/*================= *media-queries =================*/
+@media screen and (max-width: 1170px) {
+	header {
+		padding: 20px 15px;
+	}
+	.container {
+		padding: 0 15px;
+	}
+	.section-area {
+		&--right {
+			justify-content: center;
+			.card {
+				margin-right: 30px;
+				&:nth-child(2n) {
+					margin-right: 0;
+				}
+				&:nth-child(3n) {
+					margin-right: 30px;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 980px) {
+	.section-area {
+		flex-direction: column;
+		&--left {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			margin-right: 0;
+			.price-attr {
+				flex-direction: column;
+				.price {
+					margin-bottom: 40px;
+				}
+			}
+		}
+		&--right {
+			justify-content: space-around;
+			.card {
+				&:nth-child(2n+1) {
+					margin-right: 0px;
+				}
+				&:nth-child(3n+1) {
+					margin-right: 0px;
+				}
+				&:nth-child(1n+1) {
+					margin-right: 0px;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	.container {
+		padding: 0;
+	}
+	.section-area {
+		position: relative;
+		padding-top: 20px;
+		&--left {
+			visibility: hidden;
+			opacity: 0;
+			position: absolute;
+			width: 100%;
+			top: 0;
+			left: 0;
+			padding: 10px 10px 0 10px;
+			transition: visibility .6s opacity .6s;
+			z-index: 20;
+			background-color: #fff;
+			box-shadow: 0 10px 10px rgba(0,0,0,.4);
+			&.active {
+				visibility: visible;
+				opacity: 1;
+			}
+			select {
+				width: 160px;
+			}
+		}
+		
+	}
+	header {
+		position: relative;
+		.burger-nav {
+			position: absolute;
+			top: 25%;
+			right: 10px;
+			display: block;
+		}
+	}
+}
+@media screen and (max-width: 620px) {
+	.section-area {
+		&--left {
+			flex-direction: column;
+			&-item {
+				margin-bottom: 15px;
+				h2 {
+					margin-bottom: 10px;
+				}
+			}
+			select {
+				width: 100%;
+				background-size: 3%;
+			}
+		}
+	}
+}
+/*================= END *media-queries =================*/

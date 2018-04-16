@@ -1,0 +1,74 @@
+/*
+Tabs content:
+
+	*normalize
+	*header
+	*main
+		**best
+		**works
+		**cleaning
+		**service
+		**order_now
+		**animation
+		**tabs
+		**review
+	*footer
+	*media-queries
+*/
+
+/*================= *normalize =================*/
+
+// @import "normalize";
+
+/*================= END *normalize =================*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+*::selection{
+	background-color: #FFCC01;
+}
+
+.container {
+	width: 1170px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-size: 62.5%;
+	font-family: "Raleway", "Montserrat", sans-serif;
+}
+p {
+	margin: 0;
+	font-family: "Raleway", sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: "Montserrat", sans-serif;
+	font-weight: 800;
+	margin: 0;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+@import "header";
+@import "main";
+@import "footer";
+@import "media-queries";
+@import "animation";
